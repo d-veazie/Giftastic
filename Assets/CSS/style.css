@@ -6,6 +6,8 @@ button, input {
     background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
     font-family: 'Indie Flower', cursive;
     text-align: center;
+    font-weight: 100;
+    
 
 }
 
