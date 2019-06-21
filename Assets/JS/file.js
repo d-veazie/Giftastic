@@ -16,9 +16,9 @@ function getGif() {
        let result = response.data; 
        for (let i = 0; i < result.length; i++){
         let gdiv = $("<div>");
-        let p = $("<p>").text("rating ", result[i].rating);
+        let p = $("<p>").text("rating " + result[i].rating);
         let img = $("<img>");
-        img.attr("src", result[i].images.fixed_height_still.url);
+        img.attr("src", result[i].images.original.url);
         gdiv.append(img); 
         console.log(result[i]);
         gdiv.append(p); 

@@ -1,5 +1,10 @@
 button, input {
     margin: 10px;
+    padding: 10px;
+}
+
+#startGifs {
+    border-radius: 6px;
 }
 
 .jumbotron {
@@ -11,14 +16,63 @@ button, input {
 
 }
 
+.mainContainer {
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
 #gifForm {
+    padding: 20px;
+    
+}
+
+#gifView {
+    margin-left: 25%;
+}
+
+#buttons-view {
+    padding: 25px;
+}
+
+img {
     align-content: center;
     padding: 20px;
     margin-left: 20px;
+    
 }
 
 body {
     background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
     font-family: 'Indie Flower', cursive;
     align-content: center;
+}
+
+#instructions {
+    color: black;
+    border: none;
+    font-size: 22px;
+}
+
+p {
+    font-family: fantasy;
+    border: solid black;
+    text-align: center;
+    padding: 5px;
+}
+
+.spinner {
+    animation-name: spinner;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+  transform-style: preserve-3d;
+  text-align:center;
+}
+@keyframes spinner {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(-360deg);
+  }
 }
