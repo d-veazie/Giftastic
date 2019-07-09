@@ -3,7 +3,7 @@ let startGifs = ["trippy", "funny", "happy", "crazy"];
 
 function getGif() {
     let gif = $(this).attr("data-name");
-    let URL = "http://api.giphy.com/v1/gifs/search?q=" + gif + "&api_key=uXQAe2arj6gUtZ2wDLXzZ2hCJKlI3Vng";
+    let URL = "https://api.giphy.com/v1/gifs/search?q=" + gif + "&api_key=uXQAe2arj6gUtZ2wDLXzZ2hCJKlI3Vng";
 
     $.ajax({
         url: URL,
@@ -16,7 +16,7 @@ function getGif() {
        let result = response.data; 
        for (let i = 0; i < result.length; i++){
         let gdiv = $("<div>");
-        let p = $("<p>").text("rating " + result[i].rating);
+        let p = $("<p>").text("GIF rating " + result[i].rating);
         let img = $("<img>");
         img.attr("src", result[i].images.original.url);
         gdiv.append(img); 
